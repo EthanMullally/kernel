@@ -1,4 +1,4 @@
-ORG 0x7C00
+ORG 0x8000
 BITS 16
 
 section .text
