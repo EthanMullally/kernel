@@ -13,7 +13,7 @@ _checkForKeyPress:
    INT 0x16
    JMP _read
 
-_read:11
+_read:
    EXTERN _displayKey
    MOV AH, 01h
    INT 0x16
