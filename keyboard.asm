@@ -10,6 +10,9 @@ _checkForKeyPress:
    INT 0x16
    JMP _read
 
+    ; If there is no key press jump back to _checkForKeyPress
+    JMP _checkForKeyPress
+
 _read:
    EXTERN _displayKey
    MOV AH, 01h
