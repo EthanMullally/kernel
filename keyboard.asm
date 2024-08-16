@@ -5,9 +5,6 @@ section .text
   global _checkForKeyPress
   global _read 
 
-section .data:
-  key: db "" 
-
 _checkForKeyPress:
    MOV AH, 00h
    INT 0x16
