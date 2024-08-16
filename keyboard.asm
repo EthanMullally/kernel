@@ -8,10 +8,10 @@ section .text
 _checkForKeyPress:
    MOV AH, 00h
    INT 0x16
-   JMP _read
+   JNZ _read
 
     ; If there is no key press jump back to _checkForKeyPress
-    JMP _checkForKeyPress
+    JZ _checkForKeyPress
 
 _read:
    EXTERN _displayKey
